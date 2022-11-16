@@ -30,7 +30,7 @@ const UserProfile = () => {
   const [user = null, setUser] = useStorage('user');
 
   useEffect(() => {
-    getUser.then(setUser);
+    getUser().then(setUser);
   }, []);
 
   if (!user) return <Login />;
