@@ -1,0 +1,53 @@
+{
+  "name": "use-storage",
+  "version": "0.1.0",
+  "description": "A React Hook to handle localStorage properly in your WebApp",
+  "homepage": "https://github.com/franciscop/use-storage.git",
+  "repository": "https://github.com/franciscop/use-storage.git",
+  "bugs": "https://github.com/franciscop/use-storage/issues",
+  "funding": "https://www.paypal.me/franciscopresencia/19",
+  "author": "Francisco Presencia <public@francisco.io> (https://francisco.io/)",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "size": "echo $(gzip -c index.min.js | wc -c) bytes",
+    "start": "jest --watch",
+    "test": "jest --coverage"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "storage",
+    "localstorage",
+    "browser"
+  ],
+  "main": "index.min.js",
+  "type": "module",
+  "files": [],
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
+    "react": "^18.2.0",
+    "react-test": "^0.19.0",
+    "rollup": "^1.32.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-terser": "^5.2.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}
